@@ -45,18 +45,18 @@
   
 1. Fork The Repo
     <br>
-    <a href="https://github.com/Iamxda/Maria-MD/fork"><img title="Maria-MD" src="https://img.shields.io/badge/FORK iamxda-MD-h?color=black&style=for-the-badge&logo=stackshare"></a>
+    <a href="https://github.com/Iamxda/Maria-MD/fork"><img title="joker-MD" src="https://img.shields.io/badge/FORK iamxda-MD-h?color=black&style=for-the-badge&logo=stackshare"></a>
 
 2. Pair with WhatsApp 
    <p align="left">
-       <a href="https://joker-pair-riders004.koyeb.app/pair.html">
+       <a href="https://maria-pair-riders004.koyeb.app/pair.html">
          <img src="https://play-lh.googleusercontent.com/901aMQFFnVoX2T-YuJmTIwpPve_SUgMv_QSyzMSPtAqt_l0CyXN1DxfD6xXU0r2f9iM=w240-h480-rw" width="90" />
        </a>
    </p>
 
 
 ## ✧✧Maria Deployment  
-<a href="https://joker-pair-riders004.koyeb.app/deploy.html"><img title="Deploy joker-MD  " src="https://img.shields.io/badge/DEPLOY HEROKU-h?color=black&style=for-the-badge&logo=heroku"></a>
+<a href="https://maria-pair-riders004.koyeb.app/deploy.html"><img title="Deploy joker-MD  " src="https://img.shields.io/badge/DEPLOY HEROKU-h?color=black&style=for-the-badge&logo=heroku"></a>
 
 
 
@@ -88,13 +88,11 @@
  <h2 align="left"> 💖 A special Thanks to
 </h2>
 
-1. **himself**
-   - GitHub: [@himself](https://github.com/iamxda)
 
-2. **iamxda**
+1. **iamxda**
    - GitHub: [@iamxda](https://github.com/joker165)
 
-3. **joker**
+2. **joker**
    - GitHub: [@joker](https://github.com/feranmi245)
 
 Feel free to contribute and make this project even more awesome! 🌟
