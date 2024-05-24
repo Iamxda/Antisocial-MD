@@ -1,8 +1,8 @@
 <a href="https://ibb.co/pQNpmwN"><img src="https://i.ibb.co/xYwQ4Lw/cheemspic.jpg" alt="Maria-Md" border="0"></a>
-<h1 align="center">⭐Maria-Md⭐<br></h1>
+<h1 align="center">⚛️JOKER-MD⚛️<br></h1>
 
 <p align="center"> 
-  Konochiwa Senpai, I am "Maria md " a WhatsApp bot made by Ayush to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
+  Konochiwa Senpai, I am "joker md " a WhatsApp bot made by iamxda👑 to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
 </p>
 
 
@@ -27,44 +27,41 @@
 
 <p align="center">
 
-<a href="https://whatsapp.com/channel/0029VaImo5ZG3R3qjKOdyr1I"><img src="https://img.shields.io/badge/follow channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/CHOR0WkQk8N6ZrhqQwnLqm"><img src="https://img.shields.io/badge/follow channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 </p>
 
-<p align="left">
-  <a href="https://www.instagram.com/ayushpandeyy_023"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
+
 
 ## ✧✧Bot Support Groups
-<p align="center">
-
-<a href="https://chat.whatsapp.com/FoS7pSPtfMqBuoireK4aAJ"><img src="https://img.shields.io/badge/Join support group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<p align="https://chat.whatsapp.com/CHOR0WkQk8N6ZrhqQwnLqm"><img src="https://img.shields.io/badge/Join support group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 </p>
 
 
 
-### ✧✧SETUP Maria-Md 
+### ✧✧SETUP joker-Md 
 
   
 1. Fork The Repo
     <br>
-    <a href="https://github.com/AYUSH-PANDEY023/Maria-MD/fork"><img title="Maria-MD" src="https://img.shields.io/badge/FORK MARIA-MD-h?color=black&style=for-the-badge&logo=stackshare"></a>
+    <a href="https://github.com/Iamxda/Maria-MD/fork"><img title="Maria-MD" src="https://img.shields.io/badge/FORK iamxda-MD-h?color=black&style=for-the-badge&logo=stackshare"></a>
 
 2. Pair with WhatsApp 
    <p align="left">
-       <a href="https://maria-pair-riders004.koyeb.app/pair.html">
+       <a href="https://joker-pair-riders004.koyeb.app/pair.html">
          <img src="https://play-lh.googleusercontent.com/901aMQFFnVoX2T-YuJmTIwpPve_SUgMv_QSyzMSPtAqt_l0CyXN1DxfD6xXU0r2f9iM=w240-h480-rw" width="90" />
        </a>
    </p>
 
 
 ## ✧✧Maria Deployment  
-<a href="https://maria-pair-riders004.koyeb.app/deploy.html"><img title="Deploy Maria-MD  " src="https://img.shields.io/badge/DEPLOY HEROKU-h?color=black&style=for-the-badge&logo=heroku"></a>
+<a href="https://joker-pair-riders004.koyeb.app/deploy.html"><img title="Deploy joker-MD  " src="https://img.shields.io/badge/DEPLOY HEROKU-h?color=black&style=for-the-badge&logo=heroku"></a>
 
 
 
 
-### ✧✧ Follow this Tutorial for Maria's  error free and safe Deployment 
+### ✧✧ Follow this Tutorial for joker's  error free and safe Deployment 
 <p align="left" >
   <a href="https://youtu.be/KNu-gr2h7bo"><img src="https://img.shields.io/badge/Tutorial-Video-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://youtu.be/ww4z2m3uORU" /><br>
      
@@ -91,14 +88,14 @@
  <h2 align="left"> 💖 A special Thanks to
 </h2>
 
-1. **Teamolduser**
-   - GitHub: [@Teamolduser](https://github.com/Teamolduser)
+1. **himself**
+   - GitHub: [@himself](https://github.com/iamxda)
 
-2. **PikaBotz**
-   - GitHub: [@PikaBotz](https://github.com/PikaBotz)
+2. **iamxda**
+   - GitHub: [@iamxda](https://github.com/joker165)
 
-3. **DGXeon**
-   - GitHub: [@DGXeon](https://github.com/DGXeon)
+3. **joker**
+   - GitHub: [@joker](https://github.com/feranmi245)
 
 Feel free to contribute and make this project even more awesome! 🌟
 
