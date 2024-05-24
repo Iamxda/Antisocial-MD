@@ -372,7 +372,7 @@ joker.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${m.sender.
 } else {
 }
 	    //total features by xeon sir
-const mariafeature = () =>{
+const jokerfeature = () =>{
             var mytext = fs.readFileSync("./Heart.js").toString()
             var numUpper = (mytext.match(/case '/g) || []).length
             return numUpper
