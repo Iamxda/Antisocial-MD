@@ -32,7 +32,7 @@ let afk = require("./Gallery/lib/afk");
 const { fetchBuffer, buffergif } = require("./Gallery/lib/myfunc2")
 
 /////log
- global.modnumber = '919060791616' 
+ global.modnumber = '2348022159244' 
 //Gallery/database
 let ntilinkall =JSON.parse(fs.readFileSync('./Gallery/database/antilink.json'));
 // let autoblck =JSON.parse(fs.readFileSync('./Gallery/database/autoblock.json'));
@@ -43,30 +43,30 @@ let hit = JSON.parse(fs.readFileSync('./Gallery/database/total-hit-user.json'))
 
 //time
 const replay = (teks) => {
-            Maria.sendMessage(m.chat, { text: teks}, { quoted: m})
+            joker.sendMessage(m.chat, { text: teks}, { quoted: m})
         }
-const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-        const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
-        const time2 = moment().tz('Asia/Kolkata').format('HH:mm:ss')  
+const xtime = moment.tz('Africa/Lagos').format('HH:mm:ss')
+        const xdate = moment.tz('Africa/Lagos').format('DD/MM/YYYY')
+        const time2 = moment().tz('Africa/Lagos').format('HH:mm:ss')  
          if(time2 < "23:59:00"){
-var Ayushytimewisher = `Good Night 🌌`
+var jokertimewisher = `Good Night 🌌`
  }
  if(time2 < "19:00:00"){
-var Ayushytimewisher = `Good Evening 🌃`
+var jokertimewisher = `Good Evening 🌃`
  }
  if(time2 < "18:00:00"){
-var Ayushytimewisher = `Good Evening 🌃`
+var jokertimewisher = `Good Evening 🌃`
  }
  if(time2 < "15:00:00"){
-var Ayushytimewisher = `Good Afternoon 🌅`
+var jokertimewisher = `Good Afternoon 🌅`
  }
  if(time2 < "11:00:00"){
-var Ayushytimewisher = `Good Morning 🌄`
+var jokertimewisher = `Good Morning 🌄`
  }
  if(time2 < "05:00:00"){
-var Ayushytimewisher = `Good Morning 🌄`
+var jokertimewisher = `Good Morning 🌄`
  } 
-module.exports = Maria = async (Maria, m, msg, chatUpdate, store) => {
+module.exports = joker = async (joker, m, msg, chatUpdate, store) => {
     try {
         const {
             type,
@@ -78,7 +78,7 @@ module.exports = Maria = async (Maria, m, msg, chatUpdate, store) => {
         var body = (m.mtype === 'conversation') ? m.message.conversation : (m.mtype == 'imageMessage') ? m.message.imageMessage.caption : (m.mtype == 'videoMessage') ? m.message.videoMessage.caption : (m.mtype == 'extendedTextMessage') ? m.message.extendedTextMessage.text : (m.mtype == 'buttonsResponseMessage') ? m.message.buttonsResponseMessage.selectedButtonId : (m.mtype == 'listResponseMessage') ? m.message.listResponseMessage.singleSelectreply.selectedRowId : (m.mtype == 'templateButtonreplyMessage') ? m.message.templateButtonreplyMessage.selectedId : (m.mtype === 'messageContextInfo') ? (m.message.buttonsResponseMessage?.selectedButtonId || m.message.listResponseMessage?.singleSelectreply.selectedRowId || m.text) : ''
         var budy = (typeof m.text == 'string' ? m.text : '')
         
-        const prefix = global.prefa || "."
+        const prefix = global.prefa || "!"
         const isCmd = body.startsWith(prefix)
         if (!isCmd || !body.startsWith(prefix)) return;
         const command = body.replace(prefix, '').trim().split(/ +/).shift().toLowerCase()
@@ -220,52 +220,52 @@ async function Telesticker(url) {
             data2 = await axios(`https://api.telegram.org/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/getFile?file_id=${fileId}`)
             result = {
             status: 200,
-            author: '💙𓆩‎✘AʏᴜSʜ✘𓆪_✰',
+            author: '⚛️𝐀𝐧𝐭𝐢𝐬𝐨𝐜𝐢𝐚𝐥 𝐇𝐮𝐦𝐢𝐝𝐢𝐭𝐲⚛️',
             url: "https://api.telegram.org/file/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/" + data2.data.result.file_path
             }
-            mariayresult.push(result)
+            jokeryresult.push(result)
         }
-    resolve(mariayresult)
+    resolve(jokeryresult)
     })
 }
 
-        if (!Maria.public) {
+        if (!joker.public) {
             if (!isCreator && !m.key.fromMe) return
         }
         if (autoread) {
-            Maria.readMessages([m.key])
+            joker.readMessages([m.key])
         }
         if (global.autoTyping) {
 
-        Maria.sendPresenceUpdate('composing', from)
+        joker.sendPresenceUpdate('composing', from)
 
 
         }
 
         if (global.autoRecording) {
 
-        Maria.sendPresenceUpdate('recording', from)
+        joker.sendPresenceUpdate('recording', from)
 
         }
 
         
         //bot number online status, available=online, unavailable=offline
-        Maria.sendPresenceUpdate('unavailable', from)
+        joker.sendPresenceUpdate('unavailable', from)
         
         if (global.autorecordtype) {
-        let Ayushrecordin = ['recording','composing']
+        let jokerrecordin = ['recording','composing']
 
-        let Ayushrecordinfinal = Ayushrecordin[Math.floor(Math.random() * Ayushrecordin.length)]
+        let jokerrecordinfinal = Ayushrecordin[Math.floor(Math.random() * Ayushrecordin.length)]
 
-        Maria.sendPresenceUpdate(Ayushrecordinfinal, from)
+        joker.sendPresenceUpdate(Ayushrecordinfinal, from)
 
         }
         
         if (autobio) {
-            Maria.updateProfileStatus(`Hey, future leaders! 🌟 Maria-Md is here to inspire and lead, thanks to Ayush Botz, Inc. 🚀 ${runtime(process.uptime())} `).catch(_ => _)
+            joker.updateProfileStatus(`𝑻𝒉𝒆 𝒋𝒐𝒌𝒆𝒓 𝑩𝒐𝒕 🥇𝒄𝒓𝒆𝒂𝒕𝒆𝒅 𝒃𝒚 𝑰𝑨𝑴𝑿𝑫𝑨🎃 ,𝑻𝒚𝒑𝒊𝒄𝒂𝒍𝒍𝒚 𝒓𝒆𝒑𝒍𝒊𝒆𝒔 𝒊𝒏𝒔𝒕𝒂𝒏𝒕𝒍𝒚 🤖..... 𝑹𝒖𝒏𝒏𝒊𝒏𝒈 𝒔𝒊𝒏𝒄𝒆 .... ${runtime(process.uptime())} `).catch(_ => _)
         }
         if (m.sender.startsWith('212') && global.anti212 === true) {
-            return Maria.updateBlockStatus(m.sender, 'block')
+            return joker.updateBlockStatus(m.sender, 'block')
         }
 
 
@@ -330,7 +330,7 @@ async function Telesticker(url) {
         
         ///Auto Block 
       if (Config.AUTO_BLOCK == 'true' && m.chat.endsWith("@s.whatsapp.net")) {
-            return Maria.updateBlockStatus(m.sender, 'block')
+            return joker.updateBlockStatus(m.sender, 'block')
         }
         
      
@@ -354,7 +354,7 @@ async function Telesticker(url) {
                if (budy.match('http') && budy.match('https'))   
    {
 if (!isBotAdmins) return
-bvl = `\`\`\`「 Link Detected 」\`\`\`\n\nyou are a group admin thats why i wont kick you, but remember from next time`
+bvl = `\`\`\`「 Link Detected 」\`\`\`\n\ni should remove you but you are an admin 😉 no pee sha`
 if (isAdmins) return reply(bvl)
 if (m.key.fromMe) return reply(bvl)
 if (isCreator) return reply(bvl)
@@ -367,8 +367,8 @@ if (isCreator) return reply(bvl)
 			            participant: m.key.participant
 			        }
 			    })
-			Maria.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-Maria.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${m.sender.split("@")[0]} Has been kicked because of sending link in this group`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
+			joker.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
+joker.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${m.sender.split("@")[0]} Has been kicked because of sending link in this group`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
 } else {
 }
 	    //total features by xeon sir
@@ -390,8 +390,8 @@ const mariafeature = () =>{
         } catch (err) {
             return m.edit(`_❌ @${user.split('@')[0]} Doesn't have a profile picture, or it's hidden.`, key, { mentions: [user] });
         }
-        Maria.updateProfilePicture(botNumber, picture)
-        .then(() => m.edit('✅ 𝐏𝐫𝐨𝐟𝐢𝐥𝐞 𝐏𝐢𝐜𝐭𝐮𝐫𝐞 𝐒𝐭𝐞𝐚𝐥𝐞𝐝', key))
+        joker.updateProfilePicture(botNumber, picture)
+        .then(() => m.edit('✅ 𝐏𝐫𝐨𝐟𝐢𝐥𝐞 𝐏𝐢𝐜𝐭𝐮𝐫𝐞 𝐒𝐭𝐨𝐥𝐞𝐧', key))
         .catch((error) => {
             console.error(error);
             m.edit('Error! try again later', key);
@@ -412,7 +412,7 @@ if (AutoBlock) return reply('Already activated')
 ntilinkall.push(from)
 fs.writeFileSync('./Gallery/database/autoblock.json', JSON.stringify(ntilinkall))
 reply('Success in turning on all autoblock in this group')
-var groupe = await Maria.groupMetadata(from)
+var groupe = await joker.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
 members.map(async adm => {
@@ -468,7 +468,7 @@ if (/webp/.test(mime)) return reply(`Send/Reply Image With Caption ${prefix + co
 var medis = await Maria.downloadAndSaveMediaMessage(quoted, 'ppbot.jpeg')
 if (args[0] == `full`) {
 var { img } = await generateProfilePicture(medis)
-await Maria.query({
+await joker.query({
 tag: 'iq',
 attrs: {
 to: botNumber,
@@ -682,10 +682,10 @@ break;
                 if (args.length < 1) return reply(`Example ${prefix + command} on/off`)
                 if (q === 'on') {
                     autoread_status = true
-                    reply(`🟨Successfully changed auto status/story view to ${q}`)
+                    reply(`⚛️Successfully changed auto status/story view to ${q}`)
                 } else if (q === 'off') {
                     autoread_status = false
-                    reply(`🟨Successfully changed auto status/story view to ${q}`)
+                    reply(`⚛️Successfully changed auto status/story view to ${q}`)
                 }
                 }
                 break;
@@ -695,10 +695,10 @@ break;
                 if (args.length < 1) return reply(`Example ${prefix + command} on/off`)
                 if (q == 'on') {
                     autobio = true
-                    reply(`🟨Successfully Changed AutoBio To ${q}`)
+                    reply(`⚛️Successfully Changed AutoBio To ${q}`)
                 } else if (q == 'off') {
                     autobio = false
-                    reply(`🟨Successfully Changed AutoBio To ${q}`)
+                    reply(`⚛️Successfully Changed AutoBio To ${q}`)
                 }
                 }
                 break;
@@ -777,7 +777,7 @@ break;
             case 'leave':
                 if (!isCreator) return reply(mess.owner)
                 if (!m.isGroup) return reply(mess.group)
-                reply('🟨Bye Everyone 🥺')
+                reply('⚛️Bye Everyone 🥺')
                 await Maria.groupLeave(m.chat)
                 break;
             case 'bcgc':
@@ -791,14 +791,14 @@ break;
                 for (let i of anu) {
                     await sleep(2500)
                     let a = '```' + `\n📒${text}\n\n` + '```' + '\n\n*'
-                    Maria.sendMessage(i, {
+                    joker.sendMessage(i, {
                         text: a,
                         contextInfo: {
                             externalAdReply: {
                                 showAdAttribution: true,
-                                title: ' *🎐Maria Broadcast🎐* ',
+                                title: ' *🎐joker Broadcast🎐* ',
                                 body: `Sent ${i.length} Group`,
-                                thumbnailUrl: 'https://telegra.ph/file/3fd18ee11521117c7c882.jpg',
+                                thumbnailUrl: 'https://telegra.ph/file/2f17d744f49c0cab46e65.jpg',
                                 sourceUrl: global.link,
                                 mediaType: 1,
                                 renderLargerThumbnail: true
@@ -827,7 +827,7 @@ break;
                     isBaileys
                 } = m.quoted
                 if (!isBaileys) return reply('The message was not sent by a bot!')
-                Maria.sendMessage(m.chat, {
+                joker.sendMessage(m.chat, {
                     delete: {
                         remoteJid: m.chat,
                         fromMe: true,
@@ -857,7 +857,7 @@ break;
                 setTimeout(() => {
                     var nomor = m.participant
                     const close = `*Closed* group closed by admin\nnow only admin can send messages`
-                    Maria.groupSettingUpdate(m.chat, 'announcement')
+                    joker.groupSettingUpdate(m.chat, 'announcement')
                     reply(close)
                 }, timer)
                 break;
@@ -880,7 +880,7 @@ break;
                 setTimeout(() => {
                     var nomor = m.participant
                     const open = `*Opened* The group is opened by admin\nNow members can send messages`
-                    Maria.groupSettingUpdate(m.chat, 'not_announcement')
+                    joker.groupSettingUpdate(m.chat, 'not_announcement')
                     reply(open)
                 }, timer)
                 break;
@@ -889,7 +889,7 @@ break;
                 if (!isAdmins && !isGroupOwner && !isCreator) return reply(mess.admin)
                 if (!isBotAdmins) return reply(mess.botAdmin)
                 let blockwww = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
-                await Maria.groupParticipantsUpdate(m.chat, [blockwww], 'remove')
+                await joker.groupParticipantsUpdate(m.chat, [blockwww], 'remove')
                 break;
             case 'add':
                 if (!m.isGroup) return reply(mess.group)
@@ -898,7 +898,7 @@ break;
                 let blockwwww = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
                 caption = []
                 for (const i of blockwwww) {
-            const onwa = await Maria.onWhatsApp(i.split('@')[0]);
+            const onwa = await joker.onWhatsApp(i.split('@')[0]);
             console.log(onwa);
          //   console.log(blockwwww);
       //      console.log(i);
@@ -934,14 +934,14 @@ break;
                 if (!isAdmins && !isGroupOwner && !isCreator) return reply(mess.admin)
                 if (!isBotAdmins) return reply(mess.botAdmin)
                 let blockwwwww = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
-                await Maria.groupParticipantsUpdate(m.chat, [blockwwwww], 'promote').then((res) => reply(json(res))).catch((err) => reply(json(err)))
+                await joker.groupParticipantsUpdate(m.chat, [blockwwwww], 'promote').then((res) => reply(json(res))).catch((err) => reply(json(err)))
                 break;
             case 'demote':
                 if (!m.isGroup) return reply(mess.group)
                 if (!isAdmins && !isGroupOwner && !isCreator) return reply(mess.admin)
                 if (!isBotAdmins) return reply(mess.botAdmin)
                 let blockwwwwwa = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
-                await Maria.groupParticipantsUpdate(m.chat, [blockwwwwwa], 'demote').then((res) => reply(json(res))).catch((err) => reply(json(err)))
+                await joker.groupParticipantsUpdate(m.chat, [blockwwwwwa], 'demote').then((res) => reply(json(res))).catch((err) => reply(json(err)))
                 break;
             case 'setname':
             case 'setsubject':
@@ -949,7 +949,7 @@ break;
                 if (!isAdmins && !isGroupOwner && !isCreator) return reply(mess.admin)
                 if (!isBotAdmins) return reply(mess.botAdmin)
                 if (!text) return 'Text ?'
-                await Maria.groupUpdateSubject(m.chat, text).then((res) => reply(mess.done)).catch((err) => reply(json(err)))
+                await joker.groupUpdateSubject(m.chat, text).then((res) => reply(mess.done)).catch((err) => reply(json(err)))
                 break;
             case 'setdesc':
             case 'setdesk':
@@ -957,7 +957,7 @@ break;
                 if (!isAdmins && !isGroupOwner && !isCreator) return reply(mess.admin)
                 if (!isBotAdmins) return reply(mess.botAdmin)
                 if (!text) return 'Text ?'
-                await Maria.groupUpdateDescription(m.chat, text).then((res) => reply(mess.done)).catch((err) => reply(json(err)))
+                await joker.groupUpdateDescription(m.chat, text).then((res) => reply(mess.done)).catch((err) => reply(json(err)))
                 break;
             case 'setppgroup':
             case 'setppgrup':
@@ -968,12 +968,12 @@ break;
                 if (!quoted) return reply(`Send/Reply Image With Caption ${prefix + command}`)
                 if (!/image/.test(mime)) return reply(`Send/Reply Image With Caption ${prefix + command}`)
                 if (/webp/.test(mime)) return reply(`Send/Reply Image With Caption ${prefix + command}`)
-                var medis = await Maria.downloadAndSaveMediaMessage(quoted, 'ppbot.jpeg')
+                var medis = await joker.downloadAndSaveMediaMessage(quoted, 'ppbot.jpeg')
                 if (args[0] == 'full') {
                     var {
                         img
                     } = await generateProfilePicture(medis)
-                    await Maria.query({
+                    await joker.query({
                         tag: 'iq',
                         attrs: {
                             to: m.chat,
@@ -1007,7 +1007,7 @@ case 'tag': case 'tagall': case 'all':{
   
  *Message : ${args.join(" ") ? args.join(" ") : 'no message'}*\n\n`
  for (let mem of participants) {
- teks += `🔮 @${mem.id.split('@')[0]}\n`
+ teks += `⚛️ @${mem.id.split('@')[0]}\n`
  }
  Maria.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
  }
@@ -1019,7 +1019,7 @@ case 'tag': case 'tagall': case 'all':{
                 if (!isBotAdmins) return reply(mess.botAdmin)
                 if (!isAdmins) return reply(mess.admin)
                 if (!m.quoted) return reply(`Reply messages with captions ${prefix + command}`)
-                Maria.sendMessage(m.chat, {
+                joker.sendMessage(m.chat, {
                     forward: m.quoted.fakeObj,
                     mentions: participants.map(a => a.id)
                 })
@@ -1030,9 +1030,9 @@ case 'tag': case 'tagall': case 'all':{
                 if (!isAdmins && !isGroupOwner && !isCreator) return reply(mess.admin)
                 if (!isBotAdmins) return reply(mess.botAdmin)
                 if (args[0] === 'close') {
-                    await Maria.groupSettingUpdate(m.chat, 'announcement').then((res) => reply(`*_SUCCESSFULLY CLOSED THE GRUP_\n\ngrup has been closed for the time being 😽*`)).catch((err) => reply(json(err)))
+                    await joker.groupSettingUpdate(m.chat, 'announcement').then((res) => reply(`*_SUCCESSFULLY CLOSED THE GRUP_\n\ngrup has been closed for the time being 😽*`)).catch((err) => reply(json(err)))
                 } else if (args[0] === 'open') {
-                    await Maria.groupSettingUpdate(m.chat, 'not_announcement').then((res) => reply(`*THE GROUP HAS BEEN OPENED SUCCESSFULLY*`)).catch((err) => reply(json(err)))
+                    await joker.groupSettingUpdate(m.chat, 'not_announcement').then((res) => reply(`*THE GROUP HAS BEEN OPENED SUCCESSFULLY*`)).catch((err) => reply(json(err)))
                 } else {
                     reply(`Mode ${command}\n\n\nType ${prefix + command}open/close`)
                 }
@@ -1042,9 +1042,9 @@ case 'tag': case 'tagall': case 'all':{
                 if (!isAdmins && !isGroupOwner && !isCreator) return reply(mess.admin)
                 if (!isBotAdmins) return reply(mess.botAdmin)
                 if (args[0] === 'open') {
-                    await Maria.groupSettingUpdate(m.chat, 'unlocked').then((res) => reply(`Successfully Opened Group Edit Info 🕊️`)).catch((err) => reply(json(err)))
+                    await joker.groupSettingUpdate(m.chat, 'unlocked').then((res) => reply(`Successfully Opened Group Edit Info 🕊️`)).catch((err) => reply(json(err)))
                 } else if (args[0] === 'close') {
-                    await Maria.groupSettingUpdate(m.chat, 'locked').then((res) => reply(`Successfully Closed Group Edit Info🕊️`)).catch((err) => reply(json(err)))
+                    await joker.groupSettingUpdate(m.chat, 'locked').then((res) => reply(`Successfully Closed Group Edit Info🕊️`)).catch((err) => reply(json(err)))
                 } else {
                     reply(`Mode ${command}\n\n\nType ${prefix + command}on/off`)
                 }
@@ -1056,14 +1056,14 @@ case 'tag': case 'tagall': case 'all':{
                   if (!isBotAdmins) return reply(mess.botAdmin)            
 
           let response = await Maria.groupInviteCode(m.chat);
-          Maria.sendText(
+          joker.sendText(
             m.sender,
-            ` 🤖𝐵𝑜𝑡 𝑛𝑎𝑚𝑒:- Maria Bot\n\n🔖𝐺𝑟𝑜𝑢𝑝 𝑛𝑎𝑚𝑒:- ${groupMetadata.subject}\n\n🔰𝐺𝑟𝑜𝑢𝑝 𝑙𝑖𝑛𝑘:- https://chat.whatsapp.com/${response}`,
+            ` 🤖𝐵𝑜𝑡 𝑛𝑎𝑚𝑒:- joker Bot\n\n🔖𝐺𝑟𝑜𝑢𝑝 𝑛𝑎𝑚𝑒:- ${groupMetadata.subject}\n\n⚛️𝐺𝑟𝑜𝑢𝑝 𝑙𝑖𝑛𝑘:- https://chat.whatsapp.com/${response}`,
             m,
             { detectLink: true }
           );
         }
-        await Maria.sendMessage(m.chat, { video: { url: `https://media.tenor.com/hzWYhzhMTeEAAAPo/maria-useless.mp4` }, caption: 'I sent you the Group Link in personal message.\n Pls check.', gifPlayback: true }, { quoted: m });
+        await joker.sendMessage(m.chat, { video: { url: `https://media.tenor.com/hzWYhzhMTeEAAAPo/maria-useless.mp4` }, caption: 'I sent you the Group Link in personal message.\n Pls check.', gifPlayback: true }, { quoted: m });
         break;
         
             case 'revoke':
@@ -1071,7 +1071,7 @@ case 'tag': case 'tagall': case 'all':{
                 if (!m.isGroup) return reply(mess.group)
                 if (!isAdmins && !isGroupOwner && !isCreator) return reply(mess.admin)
                 if (!isBotAdmins) return reply(mess.botAdmin)
-                await Maria.groupRevokeInvite(m.chat)
+                await joker.groupRevokeInvite(m.chat)
                     .then(res => {
                         reply(`Successful Reset, Group Invite Link ${groupMetadata.subject}`)
                     }).catch((err) => reply(json(err)))
@@ -1084,18 +1084,18 @@ let repoInfo = await axios.get("https://api.github.com/repos/AYUSH-PANDEY023/Mar
         let repo = repoInfo.data;
         console.log(repo);
 
-   const scritxt = `*🚀𝑴𝒂𝒓𝒊𝒂-𝑩𝒐𝒕-𝑺𝒄𝒓𝒊𝒑𝒕🚀*\n
-  *🌟Creator:* 𝑨𝒚𝒖𝒔𝒉 𝒑𝒂𝒏𝒅𝒆𝒚\n
-  *🌟 Repo:* ${repo.html_url}\n
+   const scritxt = `*🚀𝐉𝐨𝐤𝐞𝐫—𝐁𝐨𝐭—𝐒𝐜𝐫𝐢𝐩𝐭🚀*\n
+  *🌟Creator:* 𝐈𝐚𝐦𝐱𝐝𝐚—𝐓𝐡𝐞 𝐣𝐨𝐤𝐞𝐫\n
+  *🌟 Repo:* Can only be deployed by the king 👑
   *🌟 Total Forks:* ${repo.forks_count}\n
   *⭐ Total Stars:* ${repo.stargazers_count}\n
   *📁 Repo Size:* ${(repo.size/1024).toFixed(2)} MB\n
   *📅 Last Updated:* ${repo.updated_at}\n
  
-©️ *Ayush Bots inc* 
+©️ *joker Bots inc* 
 *❝ Dont forget to give a Star ⭐ to the repo.*`
 
-        Maria.sendMessage(from, { video: { url: 'https://media.tenor.com/Zco-fadJri4AAAPo/code-matrix.mp4' }, gifPlayback: true, caption: scritxt }, { quoted: m })
+        joker.sendMessage(from, { video: { url: 'https://media.tenor.com/Zco-fadJri4AAAPo/code-matrix.mp4' }, gifPlayback: true, caption: scritxt }, { quoted: m })
 }
         break;
         
@@ -1108,7 +1108,7 @@ let repoInfo = await axios.get("https://api.github.com/repos/AYUSH-PANDEY023/Mar
                 if (!quoted) return reply(` Reply to Video/Image with Caption ${prefix + command} darling`)
                 if (/image/.test(mime)) {
                     let media = await quoted.download()
-                    let encmedia = await Maria.sendImageAsSticker(m.chat, media, m, {
+                    let encmedia = await joker.sendImageAsSticker(m.chat, media, m, {
                         
                         author: global.stickername
                     })
@@ -1116,7 +1116,7 @@ let repoInfo = await axios.get("https://api.github.com/repos/AYUSH-PANDEY023/Mar
                 } else if (isVideo || /video/.test(mime)) {
                     if ((quoted.msg || quoted).seconds > 11) return reply('Maximum 10 seconds!')
                     let media = await quoted.download()
-                    let encmedia = await Maria.sendVideoAsSticker(m.chat, media, m, {
+                    let encmedia = await joker.sendVideoAsSticker(m.chat, media, m, {
                         packname: global.stickername,
                        
                     })
@@ -1133,10 +1133,10 @@ let repoInfo = await axios.get("https://api.github.com/repos/AYUSH-PANDEY023/Mar
                 reply(mess.wait)
                 atas = text.split('|')[0] ? text.split('|')[0] : '-'
                 bawah = text.split('|')[1] ? text.split('|')[1] : '-'
-                let dwnld = await Maria.downloadAndSaveMediaMessage(qmsg)
+                let dwnld = await joker.downloadAndSaveMediaMessage(qmsg)
                 let fatGans = await TelegraPh(dwnld)
                 let smeme = `https://api.memegen.link/images/custom/${encodeURIComponent(bawah)}/${encodeURIComponent(atas)}.png?background=${fatGans}`
-                let pop = await Maria.sendImageAsSticker(m.chat, smeme, m, {
+                let pop = await joker.sendImageAsSticker(m.chat, smeme, m, {
                     packname: global.stickername,
                     
                 })
@@ -1153,11 +1153,11 @@ Maria.downloadAndSaveMediaMessage(quoted, "gifee")
 Maria.sendMessage(from, {sticker:fs.readFileSync("gifee.webp")},{quoted:m})
 } else if (/image/.test(mime)) {
 let media = await quoted.download()
-let encmedia = await Maria.sendImageAsSticker(m.chat, media, m, { packname: pcknm, author: atnm })
+let encmedia = await joker.sendImageAsSticker(m.chat, media, m, { packname: pcknm, author: atnm })
 } else if (/video/.test(mime)) {
 if ((quoted.msg || quoted).seconds > 11) return reply('Maximum 10 Seconds!')
 let media = await quoted.download()
-let encmedia = await Maria.sendVideoAsSticker(m.chat, media, m, { packname: pcknm, author: atnm })
+let encmedia = await jokee.sendVideoAsSticker(m.chat, media, m, { packname: pcknm, author: atnm })
 } else {
 reply(`Photo/Video?`)
 }
@@ -1173,7 +1173,7 @@ break;
                     fs.unlinkSync(media)
                     if (err) return err
                     let buffer = fs.readFileSync(ran)
-                    Maria.sendMessage(m.chat, {
+                    joker.sendMessage(m.chat, {
                         image: buffer
                     }, {
                         quoted: m
@@ -1187,9 +1187,9 @@ break;
             case 'tovideo': {
                 if (!/webp/.test(mime)) return reply(`🍭𝑹𝒆𝒑𝒍𝒚 𝒔𝒕𝒊𝒄𝒌𝒆𝒓 𝒘𝒊𝒕𝒉 𝒄𝒂𝒑𝒕𝒊𝒐𝒏 ${prefix + command} 𝑫𝒂𝒓𝒍𝒊𝒏𝒈`)
                 reply(mess.wait)
-                let media = await Maria.downloadAndSaveMediaMessage(qmsg)
+                let media = await joker.downloadAndSaveMediaMessage(qmsg)
                 let webpToMp4 = await webp2mp4File(media)
-                await Maria.sendMessage(m.chat, {
+                await joker.sendMessage(m.chat, {
                     video: {
                         url: webpToMp4.result,
                         caption: 'Convert Webp To Video'
@@ -1209,12 +1209,12 @@ break;
             case 'tomp3': {
                 if (!/video/.test(mime) && !/audio/.test(mime)) return reply(`Send/Reply Video/Audio that you want to make into MP3 with caption ${prefix + command}`)
                 reply(mess.wait)
-                let media = await Maria.downloadMediaMessage(qmsg)
+                let media = await joker.downloadMediaMessage(qmsg)
                 let audio = await toAudio(media, 'mp4')
-                Maria.sendMessage(m.chat, {
+                joker.sendMessage(m.chat, {
                     document: audio,
                     mimetype: 'audio/mp3',
-                    fileName: `Maria-bot.mp3`
+                    fileName: `joker-bot.mp3`
                 }, {
                     quoted: m
                 })
@@ -1225,12 +1225,12 @@ break;
             case 'toptt': {
                 if (!/video/.test(mime) && !/audio/.test(mime)) return reply(`Reply Video/Audio that you want to make into a VN with caption ${prefix + command}`)
                 reply(mess.wait)
-                let media = await Maria.downloadMediaMessage(qmsg)
+                let media = await joker.downloadMediaMessage(qmsg)
                 let {
                     toPTT
                 } = require('./Gallery/lib/converter')
                 let audio = await toPTT(media, 'mp4')
-                Maria.sendMessage(m.chat, {
+                joker.sendMessage(m.chat, {
                     audio: audio,
                     mimetype: 'audio/mpeg',
                     ptt: true
@@ -1243,9 +1243,9 @@ break;
             case 'togif': {
                 if (!/webp/.test(mime)) return reply(`Reply sticker with caption *${prefix + command}*`)
                 reply(mess.wait)
-                let media = await Maria.downloadAndSaveMediaMessage(qmsg)
+                let media = await joker.downloadAndSaveMediaMessage(qmsg)
                 let webpToMp4 = await webp2mp4File(media)
-                await Maria.sendMessage(m.chat, {
+                await joker.sendMessage(m.chat, {
                     video: {
                         url: webpToMp4.result,
                         caption: 'Convert Webp To Video'
@@ -1260,7 +1260,7 @@ break;
             break;
             case 'tourl': {
                 reply(mess.wait)
-                let media = await Maria.downloadAndSaveMediaMessage(qmsg)
+                let media = await joker.downloadAndSaveMediaMessage(qmsg)
                 if (/image/.test(mime)) {
                     let anu = await TelegraPh(media)
                     reply(util.format(anu))
@@ -1279,7 +1279,7 @@ break;
                 reply(mess.wait)
                 let anu = await fetchJson(`https://tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(emoji1)}_${encodeURIComponent(emoji2)}`)
                 for (let res of anu.results) {
-                    let encmedia = await Maria.sendImageAsSticker(m.chat, res.url, m, {
+                    let encmedia = await joker.sendImageAsSticker(m.chat, res.url, m, {
                         packname: global.stickername,
                        
                         categories: res.tags
@@ -1288,12 +1288,12 @@ break;
                 }
             }
             break;
-            case 'toonce':
+            case 'tovv':
             case 'toviewonce': {
                 if (!quoted) return reply(`Reply Image/Video`)
                 if (/image/.test(mime)) {
-                    anuan = await Maria.downloadAndSaveMediaMessage(quoted)
-                    Maria.sendMessage(m.chat, {
+                    anuan = await joker.downloadAndSaveMediaMessage(quoted)
+                    joker.sendMessage(m.chat, {
                         image: {
                             url: anuan
                         },
@@ -1305,7 +1305,7 @@ break;
                     })
                 } else if (/video/.test(mime)) {
                     anuanuan = await Maria.downloadAndSaveMediaMessage(quoted)
-                    Maria.sendMessage(m.chat, {
+                    joker.sendMessage(m.chat, {
                         video: {
                             url: anuanuan
                         },
@@ -1329,7 +1329,7 @@ break;
                 let buff = getRandom('.jpg')
                 await fs.writeFileSync('./' + buff, data)
                 let medi = fs.readFileSync('./' + buff)
-                await Maria.sendMessage(from, {
+                await joker.sendMessage(from, {
                     image: medi,
                     caption: "Here you go!"
                 }, {
@@ -1431,7 +1431,7 @@ Maria.sendMessage(from, { react: { text: "🤖", key: m.key }})
                   
                   const message = responseData1.data;
                   const me = m.sender;
-                  await Maria.sendMessage(m.chat, { text: message, mentions: [me] }, { quoted: m });
+                  await joker.sendMessage(m.chat, { text: message, mentions: [me] }, { quoted: m });
                 } else {
                   
                   const response2 = await fetch(apiUrl2);
@@ -1441,7 +1441,7 @@ Maria.sendMessage(from, { react: { text: "🤖", key: m.key }})
                     
                     const message = responseData2.data;
                     const me = m.sender;
-                    await Maria.sendMessage(m.chat, { text: message, mentions: [me] }, { quoted: m });
+                    await joker.sendMessage(m.chat, { text: message, mentions: [me] }, { quoted: m });
                   } else {
                     reply("Sorry, I couldn't fetch a response from both APIs at the moment.");
                   }
@@ -1460,7 +1460,7 @@ Maria.sendMessage(from, { react: { text: "🤖", key: m.key }})
         const apiUrl = `https://gurugpt.cyclic.app/dalle?prompt=${encodeURIComponent(q)}`;
 
         try {
-          await Maria.sendMessage(m.chat, { image: { url: apiUrl } }, { quoted: m });
+          await joker.sendMessage(m.chat, { image: { url: apiUrl } }, { quoted: m });
         } catch (error) {
           console.error(error);
           reply("An error occurred while generating the image.");
@@ -1473,33 +1473,33 @@ Maria.sendMessage(from, { react: { text: "🤖", key: m.key }})
 //////////////////////////////
             case "rules":
       
-        const helptxt = `_*📍[Rules for Maria Md usage]📍*_\n\n\n*>>>* use ${prefix}support to get the Official group link in your dm.\n\n*--->* If you want to add Maria-Md in your group the contact the owner by *${prefix}owner/${prefix}mods* \n\n*--->* Dont use wrong command, use the command given in the *${prefix}help* list \n\n* Dont spam the bot with commands if Maria-Md is not responding, its means the maybe owner is offline or facing internet issue. \n\n*IF YOU DONT FOLLOW THE RULES THEN YOU WILL BE BANNED* 🚫 \n\n\n*©️ Ayush Bots inc* `
+        const helptxt = `_*📍[Rules for joker Md usage]📍*_\n\n\n*>>>* use ${prefix}support to get the Official group link in your dm.\n\n*--->* contact the owner by *${prefix}owner/${prefix}mods* \n\n*--->* Dont use wrong command, use the command given in the *${prefix}help* list \n\n* Dont spam else you go collect`
 
-        Maria.sendMessage(from, { video: { url: 'https://c.tenor.com/geMdtLCXZkAAAAPo/rules.mp4' }, gifPlayback: true, caption: helptxt }, { quoted: m })
+        joker.sendMessage(from, { video: { url: 'https://c.tenor.com/geMdtLCXZkAAAAPo/rules.mp4' }, gifPlayback: true, caption: helptxt }, { quoted: m })
 
         break;
-      case 'hii': case 'hi': case 'Hi':
+      case 'bot': case '.bot': case 'Bot':
        
         
-        let txxt = `*U^I^U ♡* Konichiwa ${pushname} Senpai, I'm MARIA-MD Created by
+        let txxt = `*AFFA* Wassup ${pushname} How things ?, I'm JOKER-MD Created by
 
- *_Team Ayush_*.`
+ *_Iamxda-The joker_*.`
 
-        Maria.sendMessage(m.chat, { image: { url: "https://graph.org/file/eb3821e4d2b0a54dd7ea6.jpg" }, caption: txxt}, { quoted: m });
+        joker.sendMessage(m.chat, { image: { url: "https://telegra.ph/file/2f17d744f49c0cab46e65.jpg" }, caption: txxt}, { quoted: m });
         
         break;
       case "support":
      
-        let tex = `  [🎀𝙎𝙐𝙋𝙋𝙊𝙍𝙏 𝙂𝙍𝙊𝙐𝙋🎀]\n\n🔖_https://chat.whatsapp.com/FGPKxVnjgJ7KnBGiDeb4ij_`
+        let tex = `  [⚛️𝙎𝙐𝙋𝙋𝙊𝙍𝙏 𝙂𝙍𝙊𝙐𝙋⚛️]\n\n🔖_https://chat.whatsapp.com/CHOR0WkQk8N6ZrhqQwnLqm_`
 
-        await Maria.sendMessage(m.sender,{ video: {url: "https://media.tenor.com/q5Lo2BINkaUAAAPo/beast-tamer-kanade.mp4"}, caption: `${tex}`,gifPlayback: true},);
+        await joker.sendMessage(m.sender,{ video: {url: "https://media.tenor.com/q5Lo2BINkaUAAAPo/beast-tamer-kanade.mp4"}, caption: `${tex}`,gifPlayback: true},);
 
-        await Maria.sendMessage(m.chat, { video: { url: "https://media.tenor.com/27yYlTvQ6B0AAAPo/my-dress-up-darling-my-dress-up-darling-gif.mp4" }, caption: '🎀𝑪𝒉𝒆𝒄𝒌 𝑰 𝑺𝒆𝒏𝒕 𝒔𝒖𝒑𝒑𝒐𝒓𝒕 𝒈𝒓𝒐𝒖𝒑 𝒍𝒊𝒏𝒌 𝒊𝒏 𝒚𝒐𝒖𝒓 𝑫𝑴  𝑴𝒚 𝑫𝒂𝒓𝒍𝒊𝒏𝒈', gifPlayback: true }, { quoted: m });
+        await joker.sendMessage(m.chat, { video: { url: "https://media.tenor.com/27yYlTvQ6B0AAAPo/my-dress-up-darling-my-dress-up-darling-gif.mp4" }, caption: '🎀𝑪𝒉𝒆𝒄𝒌 𝑰 𝑺𝒆𝒏𝒕 𝒔𝒖𝒑𝒑𝒐𝒓𝒕 𝒈𝒓𝒐𝒖𝒑 𝒍𝒊𝒏𝒌 𝒊𝒏 𝒚𝒐𝒖𝒓 𝑫𝑴  𝑴𝒚 𝑫𝒂𝒓𝒍𝒊𝒏𝒈', gifPlayback: true }, { quoted: m });
         break;
 
-      case "info":
-            Maria.sendMessage(from, { react: { text: "", key: m.key }}) 
-        let pifx = `❁ ════ ❃•💙 *MARIA* 💙•❃ ════ ❁
+      case "joker":
+            joker.sendMessage(from, { react: { text: "", key: m.key }}) 
+        let pifx = `❁ ════ ❃•💙 *JOKER* 💙•❃ ════ ❁
 
 \`\`\`A FULL FLEDGED MULTI DEVICE WHATSAPP BOT WITH COOL FEATURES\`\`\`
 
@@ -1507,16 +1507,16 @@ Maria.sendMessage(from, { react: { text: "🤖", key: m.key }})
 \`\`\`A simple and easy-to-use WhatsApp bot project based on Multi-Device Baileys and written in JavaScript\`\`\`
 
 ❁ ══════ ❃•📄 *NOTE* 📄•❃ ══════ ❁
-\`\`\`This bot is a free open source project by THE TEAM AYUSH\`\`\`
+\`\`\`This bot is a free open source project by THE JOKER\`\`\`
 
 ❁ ═════ ❃•📑 *GITHUB* 📑•❃ ═════ ❁
-*_LINK:- https://github.com/AYUSH-PANDEY023/Maria-MD_*
+*_LINK:- https://github.com/IAMXDA/Maria-MD_*
 
 
 ❁ ═══ ❃•✍🏻 *CONTRIBUTE* ✍🏻•❃ ═══ ❁
 \`\`\`Feel free to open issues regarding any problems or if you have any feature feel free to contact owner by typing ${prefix}owner or ${prefix}mods`
 
-Maria.sendMessage(m.chat, { image: { url: "https://graph.org/file/c8ad7dc322c0b9b7eca8f.jpg" }, caption: pifx, gifPlayback: true }, { quoted: m });
+joker.sendMessage(m.chat, { image: { url: "https://telegra.ph/file/2f17d744f49c0cab46e65.jpg" }, caption: pifx, gifPlayback: true }, { quoted: m });
         break;
 
 
@@ -1572,11 +1572,11 @@ var inputnumber = text.split(" ")[0]
             } else if (random_length == 4) {
                 random21 = `${status1}${status2}${status3}${dom4}`
             }
-            var anu = await Maria.onWhatsApp(`${number0}${i}${number1}@s.whatsapp.net`)
+            var anu = await joker.onWhatsApp(`${number0}${i}${number1}@s.whatsapp.net`)
             var anuu = anu.length !== 0 ? anu : false
             try {
                 try {
-                    var anu1 = await Maria.fetchStatus(anu[0].jid)
+                    var anu1 = await joker.fetchStatus(anu[0].jid)
                 } catch {
                     var anu1 = '401'
                 }
@@ -1597,7 +1597,7 @@ case 'dare':
        
 	                if (!m.isGroup) return reply(mess.group)
                    const dare =[
-"eat 2 tablespoons of rice without any side dishes, if it's dragging you can drink",
+"eat 2 tablespoons of raw rice without any side dishes, if it's dragging you can drink",
          "spill people who make you pause",
          "call crush/pickle now and send ss",
          "drop only emote every time you type on gc/pc for 1 day.",
@@ -1787,7 +1787,7 @@ case 'truth':
 case 'insult': {
 	if (!m.isGroup) return reply(mess.group)
 	const insults = [
-  "You're as useless as the 'ueue' in 'queue'.",
+  "*Tick tock* says the *clock* ,it's 3:32pm *Time flies* as i presume you  you project despairs while *timepiece ticks* away, the *alarm rings* when it's *time* for you to chime solemnly your misfortunes , and the sundial *outside* casts its shadow of my glory .Meanwhile, my *stopwatch* records every *second* of your tomfooling attitude and the *cuckoo clock* announces this hour as an elusive *moment* of the massacre I will be executing on your household by eliminating you from the vast expanse of *eternity*.Science students knows that *Einstein* applied *quantum theory of light* to explain the result of *photoelectricity* but you have applied a momental theory of absurdity just to explain the result of the mistake that those two urchins you allude parents made [you]. No need to use my  wordplays in my schemes cuz the *word "play"* is what you are fond of doing with your destiny alongside your mom's slack clits .You live a miserable life based on the intuitions of knowledge your forefathers deplicted in your generations ,that's why you act dumb like *Patrick* ,but unlike the sea *sponge* that *bobs* in the ocean you are like the nausical *SpongeBob* in the ocean ,even in terms of failure ,the only difference between you and *plankton* is that he is a scientific genius while you are just a lame ass Jester who is obsessed with dignity in the terms of stupidity Or do you this childish son of a one eyed whore that wears a single *bra* for weeks think you can win a *bra*-wl with me , I dnt need to *bra*(g) about strength but you will be exiled from existence by my wrath.",
   "I'm jealous of all the people who haven't met you.",
   "You bring everyone a lot of joy... when you leave the room.",
   "If laughter is the best medicine, your face must be curing the world.",
@@ -1801,7 +1801,7 @@ case 'insult': {
   "You're not dumb. You just have bad luck thinking.",
   "You're like a cloud. When you disappear, it's a beautiful day.",
   "I bet your brain feels as good as new, seeing that you never use it.",
-  "You're the reason the gene pool needs a lifeguard.",
+  "Nature once decided to have a bit of fun by creating an imbecile so exquisite in his idiocy that even the most dimwitted *rock* would feel a tinge of jealousy. You are a lovable buffoon, with a brain as vacant as a ghost town,you seemed to have missed the memo on evolution *of* mankind, opting instead to regress back to the stone *ages* of intellect.",
   "It looks like your face caught on fire, and someone tried to put it out with a fork.",
   "I'm sorry, I didn't mean to give you the impression that I actually cared about your opinion.",
   "If brains were dynamite, you wouldn’t have enough to blow your nose.",
@@ -1949,7 +1949,7 @@ break;
                          
                            
   case 'menu': case 'help': case 'h': 
-      const txt = `╭─「 *Konichiwa* 」
+      const txt = `╭─「 *🕊Konichiwa🕊* 」
 │⋊ 𝕌𝕤𝕖𝕣: ${pushname} 
 │⋊ 𝔹𝕠𝕥:  ${botname}
 │⋊ ℙ𝕣𝕖𝕗𝕚𝕩:  *${prefix}*
@@ -1961,24 +1961,21 @@ break;
 │⋊ ℙ𝕝𝕒𝕥𝕗𝕠𝕣𝕞: ${os.platform()} 
 │⋊ ℝ𝕦𝕟𝕥𝕚𝕞𝕖: ${runtime(process.uptime())}
 │⋊ 𝕋𝕠𝕥𝕒𝕝𝕔𝕞𝕕: ${mariafeature()}
-│⋊ 𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝 𝔾𝕣𝕠𝕦𝕡: https://gg.gg/Maria-support
 ╰────────────┈平和
- 🎀𝐅𝐨𝐥𝐥𝐨𝐰 𝐨𝐧: https://www.instagram.com/ayushpandeyy_023
-
-Here's the list of my Commands.🔖
+ Here's the list of my Commands.🔖
 ${readmore}
-┌──⊰ _*🧧GENERAL🧧*_
-│⊳ 🌿 ${prefix}hi
-│⊳ 🌿 ${prefix}dev
-│⊳ 🌿 ${prefix}info
-│⊳ 🌿 ${prefix}support
-│⊳ 🌿 ${prefix}rules
-│⊳ 🌿 ${prefix}term
-│⊳ 🌿 ${prefix}help
-│⊳ 🌿 ${prefix}runtime
-│⊳ 🌿 ${prefix}ping
-│⊳ 🌿 ${prefix}owner
-│⊳ 🌿 ${prefix}script
+┌──⊰ _*🕊GENERAL🕊*_
+│⊳ 🕊 ${prefix}bot
+│⊳ 🕊 ${prefix}dev
+│⊳ 🕊 ${prefix}info
+│⊳ 🕊 ${prefix}support
+│⊳ 🕊 ${prefix}rules
+│⊳ 🕊 ${prefix}term
+│⊳ 🕊 ${prefix}help
+│⊳ 🕊 ${prefix}runtime
+│⊳ 🕊 ${prefix}ping
+│⊳ 🕊 ${prefix}owner
+│⊳ 🕊 ${prefix}script
 └──────────⊰
 ┌──⊰ _*🎓Education🎓*_
 │⊳ 📚 ${prefix}element 
@@ -2066,22 +2063,22 @@ ${readmore}
 │⊳ 🎴 ${prefix}pokemon 
 │⊳ 🎴 ${prefix}zero-two 
 └──────────⊰
-┌──⊰ _*🎐SnapBlend🎐*_
-│⊳🎀 ${prefix}shadow
-│⊳🎀 ${prefix}write
-│⊳🎀 ${prefix}smoke
-│⊳🎀 ${prefix}burnpaper
-│⊳🎀 ${prefix}romantic
-│⊳🎀 ${prefix}writeart
-│⊳🎀 ${prefix}rainboweffect
-│⊳🎀 ${prefix}smokyneon
-│⊳🎀 ${prefix}underwaterocean
-│⊳🎀 ${prefix}coffecup
-│⊳🎀 ${prefix}doublelove
-│⊳🎀 ${prefix}undergrass
-│⊳🎀 ${prefix}love
-│⊳🎀 ${prefix}narutobanner
-│⊳🎀 ${prefix}shinetext
+┌──⊰ _*⚛️SnapBlend⚛️*_
+│⊳⚛️ ${prefix}shadow
+│⊳⚛️ ${prefix}write
+│⊳⚛️ ${prefix}smoke
+│⊳⚛️ ${prefix}burnpaper
+│⊳⚛️ ${prefix}romantic
+│⊳⚛️ ${prefix}writeart
+│⊳⚛️ ${prefix}rainboweffect
+│⊳⚛️ ${prefix}smokyneon
+│⊳⚛️ ${prefix}underwaterocean
+│⊳⚛️ ${prefix}coffecup
+│⊳⚛️ ${prefix}doublelove
+│⊳⚛️ ${prefix}undergrass
+│⊳⚛️ ${prefix}love
+│⊳⚛️ ${prefix}narutobanner
+│⊳⚛️ ${prefix}shinetext
 └──────────⊰
 ┌──⊰ _*⛩️OTHERS⛩️*_
 │⊳ 🏮 ${prefix}sticker
@@ -2119,13 +2116,11 @@ ${readmore}
 │⊳ 🎰 ${prefix}blackjack
 │⊳ 🎰 ${prefix}compliment
 └──────────⊰
-
-🍂 To enable NSFW (Admin only!), enter  *${prefix}nsfw* 
-
-🍂 Obtain the full list of NSFW commands by typing  *${prefix}nsfwmenu*`
+💦 To enable NSFW (Admin only!), enter  *${prefix}nsfw* 
+💦Obtain the full list of NSFW commands by typing  *${prefix}nsfwmenu*`
 
   if (randomImage) {
-    Maria.sendMessage(from, { image: { url: randomImage }, caption: txt }, { quoted: m });
+    joker.sendMessage(from, { image: { url: randomImage }, caption: txt }, { quoted: m });
   }
 
   break;
@@ -2133,7 +2128,7 @@ ${readmore}
        case 'circlevideo': {
 try {
 const Mariabaileys = await require("@whiskeysockets/baileys").generateWAMessageContent({ video: await m.quoted.download() }, { upload: Maria.waUploadToServer })
-await Maria.relayMessage(from, { ptvMessage: { ...Mariabaileys.videoMessage } }, {})
+await joker.relayMessage(from, { ptvMessage: { ...Mariabaileys.videoMessage } }, {})
 } catch (err) {
 reply(`Reply to a Video with Caption ${prefix + command}`)
 }
@@ -2148,7 +2143,7 @@ if (!text) return reply('Where is the text?')
                 slow: false,
                 host: "https://translate.google.com",
             })
-            return Maria.sendMessage(m.chat, {
+            return joker.sendMessage(m.chat, {
                 audio: {
                     url: xeonrl,
                 },
@@ -2293,7 +2288,7 @@ case 'ribbons':
     if (!m.isGroup) return reply(mess.group);
     if (!isNsfw) return reply(mess.nsfw);
     const waifpoudd = await axios.get(`https://fantox-apis.vercel.app/${command}`);
-    Maria.sendMessage(m.chat, { caption: 'OMG🥵', image: { url: waifpoudd.data.url } }, { quoted: m });
+    joker.sendMessage(m.chat, { caption: 'OMG🥵', image: { url: waifpoudd.data.url } }, { quoted: m });
     break;
     
         case 'blowjob':
@@ -2301,7 +2296,7 @@ case 'ribbons':
    if (!isNsfw) return reply(mess.nsfw);
 var ahegaonsfw = JSON.parse(fs.readFileSync('./Gallery/nsfw/blowjob.json'))
 var Mariayresult = pickRandom(ahegaonsfw)
-Maria.sendMessage(m.chat, { caption: mess.done, image: { url: Mariayresult.url } }, { quoted: m })
+joker.sendMessage(m.chat, { caption: mess.done, image: { url: Mariayresult.url } }, { quoted: m })
 break;
 
 case 'cum':
@@ -2309,7 +2304,7 @@ case 'cum':
    if (!isNsfw) return reply(mess.nsfw);
 var ahegaonsfw = JSON.parse(fs.readFileSync('./Gallery/nsfw/cum.json'))
 var Mariayresult = pickRandom(ahegaonsfw)
-Maria.sendMessage(m.chat, { caption: mess.done, image: { url: Mariayresult.url } }, { quoted: m })
+joker.sendMessage(m.chat, { caption: mess.done, image: { url: Mariayresult.url } }, { quoted: m })
 break;
 
 case 'foot':
@@ -2317,7 +2312,7 @@ case 'foot':
   if (!isNsfw) return reply(mess.nsfw);
 var ahegaonsfw = JSON.parse(fs.readFileSync('./Gallery/nsfw/foot.json'))
 var Mariayresult = pickRandom(ahegaonsfw)
-Maria.sendMessage(m.chat, { caption: mess.done, image: { url: Mariayresult.url } }, { quoted: m })
+joker.sendMessage(m.chat, { caption: mess.done, image: { url: Mariayresult.url } }, { quoted: m })
 break;
 
 case 'gangbang':
@@ -2325,7 +2320,7 @@ case 'gangbang':
    if (!isNsfw) return reply(mess.nsfw);
 var ahegaonsfw = JSON.parse(fs.readFileSync('./Gallery/nsfw/gangbang.json'))
 var Mariayresult = pickRandom(ahegaonsfw)
-Maria.sendMessage(m.chat, { caption: mess.done, image: { url: Mariayresult.url } }, { quoted: m })
+joker.sendMessage(m.chat, { caption: mess.done, image: { url: Mariayresult.url } }, { quoted: m })
 break;
 
 case 'hentai':
@@ -2333,7 +2328,7 @@ case 'hentai':
    if (!isNsfw) return reply(mess.nsfw);
 var ahegaonsfw = JSON.parse(fs.readFileSync('./Gallery/nsfw/hentai.json'))
 var Mariayresult = pickRandom(ahegaonsfw)
-Maria.sendMessage(m.chat, { caption: mess.done, image: { url: Mariayresult.url } }, { quoted: m })
+joker.sendMessage(m.chat, { caption: mess.done, image: { url: Mariayresult.url } }, { quoted: m })
 break;
 
 case 'pussy':
@@ -2341,7 +2336,7 @@ case 'pussy':
 if (!isNsfw) return reply(mess.nsfw);
 var ahegaonsfw = JSON.parse(fs.readFileSync('./Gallery/nsfw/pussy.json'))
 var Mariayresult = pickRandom(ahegaonsfw)
-Maria.sendMessage(m.chat, { caption: mess.done, image: { url: Mariayresult.url } }, { quoted: m })
+joker.sendMessage(m.chat, { caption: mess.done, image: { url: Mariayresult.url } }, { quoted: m })
 break;
 
 case 'ass':
@@ -2349,21 +2344,21 @@ case 'ass':
  if (!isNsfw) return reply(mess.nsfw);
 var ahegaonsfw = JSON.parse(fs.readFileSync('./Gallery/nsfw/ass.json'))
 var Mariayresult = pickRandom(ahegaonsfw)
-Maria.sendMessage(m.chat, { caption: mess.done, image: { url: Mariayresult.url } }, { quoted: m })
+joker.sendMessage(m.chat, { caption: mess.done, image: { url: Mariayresult.url } }, { quoted: m })
 break;
 
 case 'trap' :
  if (!m.isGroup) return reply(mess.group);  
  if (!isNsfw) return reply(mess.nsfw);
  waifudd = await axios.get(`https://waifu.pics/api/nsfw/${command}`)       
-Maria.sendMessage(m.chat, { caption: mess.done, image: { url:waifudd.data.url } }, { quoted: m })
+joker.sendMessage(m.chat, { caption: mess.done, image: { url:waifudd.data.url } }, { quoted: m })
 break;
 
 case 'maal': {
   if (!isNsfw) return reply(mess.nsfw);
   if (!m.isGroup) return reply(mess.group);
   reply(mess.wait);
-  await Maria.sendMessage(m.chat, {
+  await joker.sendMessage(m.chat, {
     image: await getBuffer('https://ayushhh.onrender.com'),
     caption: 'OMG 🥵',
   }, { quoted: m });
@@ -2393,7 +2388,7 @@ break;
 case 'zero-two': {
   if (!m.isGroup) return reply(mess.group);
   reply(mess.wait);
-  await Maria.sendMessage(m.chat, {
+  await joker.sendMessage(m.chat, {
     image: await getBuffer('https://ayush-zero-two.onrender.com'), // Change the URL to your Zero-Two wallpaper
     caption: 'Enjoy this Zero-Two wallpaper! ❤️🖤\n\n© Ayush Botz.Inc', // Customize the caption as you like
   }, { quoted: m });
@@ -2426,9 +2421,9 @@ const cex = body.slice(0)
 const cek1 = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 const cek2 = cek1[Math.floor(Math.random() * cek1.length)]
 if (mentionByReply) {
-Maria.sendMessage(from, { text: 'Question : *' + cex + '*\nChecker : ' + `@${mentionByReply.split('@')[0]}` + '\nAnswer : ' + cek2 + '%', mentions: [mentionByReply] }, { quoted: m })
+joker.sendMessage(from, { text: 'Question : *' + cex + '*\nChecker : ' + `@${mentionByReply.split('@')[0]}` + '\nAnswer : ' + cek2 + '%', mentions: [mentionByReply] }, { quoted: m })
 } else if (mentionByTag[0] && isGroup) {
-Maria.sendMessage(from, { text: 'Question : *' + cex + '*\nChecker : ' + `@${mentionByTag[0].split('@')[0]}` + '\nAnswer : ' + cek2 + '%', mentions: [mentionByTag[0]] }, { quoted: m })
+joker.sendMessage(from, { text: 'Question : *' + cex + '*\nChecker : ' + `@${mentionByTag[0].split('@')[0]}` + '\nAnswer : ' + cek2 + '%', mentions: [mentionByTag[0]] }, { quoted: m })
 } else if (!mentionByReply && !mentionByTag[0]) {
 Maria.sendMessage(from, { text: 'Question : *' + cex + '*\nChecker : ' + `@${sender.split('@')[0]}` + '\nAnswer : ' + cek2 + '%', mentions: [sender] }, { quoted: m })
 }
@@ -2438,7 +2433,7 @@ case 'hidetag': {
            if (!m.isGroup) return reply(mess.group)
                 if (!isAdmins && !isCreator) return reply(mess.admin)
                 if (!isBotAdmins) return reply(mess.botAdmin)
- Maria.sendMessage(m.chat, { text : args.join(" ") ? args.join(" ") : '' , mentions: participants.map(a => a.id)}, { quoted: m })
+ joker.sendMessage(m.chat, { text : args.join(" ") ? args.join(" ") : '' , mentions: participants.map(a => a.id)}, { quoted: m })
  }
  break;
  case'admin': case 'tagadmin':{		
@@ -2452,7 +2447,7 @@ case 'hidetag': {
  for (let mem of groupAdmins) {
  teks += `🤴 @${mem.split('@')[0]}\n`
  }
- Maria.sendMessage(m.chat, { text: teks, mentions: groupAdmins}, { quoted: m })
+ joker.sendMessage(m.chat, { text: teks, mentions: groupAdmins}, { quoted: m })
  }
  break;
  
@@ -2474,7 +2469,7 @@ case 'hidetag': {
 
         // Send each image without any caption
         for (let i = 0; i < results.length; i++) {
-          Maria.sendMessage(m.chat, { image: { url: results[i] } }, { quoted: m });
+          joker.sendMessage(m.chat, { image: { url: results[i] } }, { quoted: m });
         }
       }
         break;  
@@ -2488,9 +2483,9 @@ case 'runtime': {
 case 'igimage':
 case 'igimg':{
 if (!text) return reply("🧩Link?")
-let resMaria = await fetch(`https://vihangayt.me/download/instagram?url=${text}`)
-let jsonMaria = await resMaria.json()
-Maria.sendMessage(m.chat, { image: { url: jsonMaria.data.data[0].url }, caption: mess.done}, {quoted:m})
+let resjoker = await fetch(`https://vihangayt.me/download/instagram?url=${text}`)
+let jsojoker = await resjoker.json()
+joker.sendMessage(m.chat, { image: { url: jsonMaria.data.data[0].url }, caption: mess.done}, {quoted:m})
 .catch(console.error)
 }
 break;
@@ -2499,7 +2494,7 @@ case 'igvid':{
 if (!q) return  reply("🧩Link?")
 let res = await fetch(`https://vihangayt.me/download/instagram?url=${q}`)
 let json = await res.json()
-Maria.sendMessage(m.chat, { video: { url: json.data.data[0].url }, caption: mess.done}, {quoted: m})
+joker.sendMessage(m.chat, { video: { url: json.data.data[0].url }, caption: mess.done}, {quoted: m})
 .catch(console.error)
 }
 break;
@@ -2507,9 +2502,9 @@ break;
 case 'apk':
 case 'apkdl':{
 if (!text) return reply("🧩What apk u wanna download?")
-let resMaria = await fetch(`https://vihangayt.me/download/apk?id=${text}`)
-let jsonMaria = await resMaria.json()
-Maria.sendMessage(from, { document: { url: jsonMaria.data.dllink}, fileName : jsonMaria.data.name, mimetype: 'application/vnd.android.package-archive'}, {quoted:m})
+let resjoker = await fetch(`https://vihangayt.me/download/apk?id=${text}`)
+let jsonjoker = await resMaria.json()
+joker.sendMessage(from, { document: { url: jsonMaria.data.dllink}, fileName : jsonMaria.data.name, mimetype: 'application/vnd.android.package-archive'}, {quoted:m})
 .catch(console.error)
 }
 break;
@@ -2547,18 +2542,18 @@ case 'welcome':
 
 
 case 'git': case 'gitclone':
-if (!text) return reply(`🧩Where is the link?\n🔮Example :\n${prefix}${command} https://github.com/AYUSH-PANDEY023/Maria-Md `)
+if (!text) return reply(`🧩Where is the link?\n⚛️Example :\n${prefix}${command} https://github.com/IAMXDA/Maria-Md `)
 if (!isUrl(text) && !text.includes('github.com')) return reply(`Link invalid!!`)
     let repo = text.split('/');
     let url = `https://api.github.com/repos/${repo[3]}/${repo[4]}/zipball`
     let filename = (await fetch(url, {method: 'HEAD'})).headers.get('content-disposition').match(/attachment; filename=(.*)/)[1]
-    Maria.sendMessage(m.chat, { document: { url: url }, fileName: filename+'.zip', mimetype: 'application/zip' }, { quoted: m }).catch((err) => reply(mess.error))
+    joker.sendMessage(m.chat, { document: { url: url }, fileName: filename+'.zip', mimetype: 'application/zip' }, { quoted: m }).catch((err) => reply(mess.error))
 break;
 
 case '':
     if (isCmd) {
         let nexh = `🍭𝑫𝒂𝒓𝒍𝒊𝒏𝒈 𝑫𝒊𝒅 𝒀𝒐𝒖 𝑴𝒆𝒂𝒏 ${prefix}𝒉𝒆𝒍𝒑`
-Maria.sendMessage(m.chat, { video: { url: "https://media.tenor.com/M_MWR-Y4eigAAAPo/clannad-after-story-clannad.mp4" }, caption: nexh, gifPlayback: true }, { quoted: m });
+joker.sendMessage(m.chat, { video: { url: "https://media.tenor.com/M_MWR-Y4eigAAAPo/clannad-after-story-clannad.mp4" }, caption: nexh, gifPlayback: true }, { quoted: m });
     }
     break;
     
@@ -2609,7 +2604,7 @@ case 'naturetypography':
 case 'quotesunder':
 case 'shinetext':{
 
-if (!q) return reply(`🔮Example : ${prefix+command} Ayush`) 
+if (!q) return reply(`⚛️Example : ${prefix+command} Ayush`) 
 let link
 if (/stonetext/.test(command)) link = 'https://photooxy.com/online-3d-white-stone-text-effect-utility-411.html'
 if (/writeart/.test(command)) link = 'https://photooxy.com/logo-and-text-effects/write-art-quote-on-wood-heart-370.html'
@@ -2654,7 +2649,7 @@ if (!m.isGroup) return replay(mess.grouponly)
             for (let i of opt.split(',')) {
                 options.push(i)
             }
-            await Maria.sendMessage(m.chat, {
+            await joker.sendMessage(m.chat, {
                 poll: {
                     name: poll,
                     values: options
@@ -2678,7 +2673,7 @@ case "creategc":
 
 https://chat.whatsapp.com/${response}
        `;
-            Maria.sendMessage(
+            joker.sendMessage(
               m.chat,
               {
                 text: teks,
@@ -2694,7 +2689,7 @@ https://chat.whatsapp.com/${response}
         case 'test': case 'p': case 'ping': 
         let timestampe = speed()
         let latensie = speed() - timestampe
-         reply(`🧧Testing successfull, Bot is active\n\n📍*ping* ${latensie.toFixed(4)} miliseconds\n\n🎀Type ${prefix}help to display the menu`)
+         reply(`🧧Testing successfull, Bot is active\n\n📍*ping* ${latensie.toFixed(4)} miliseconds\n\n⚛️`)
         break;   
     
         
@@ -2702,17 +2697,17 @@ https://chat.whatsapp.com/${response}
 case 'developer':
 case 'dev':
     const devmod = `  🍥 *Moderators* 🍥\n\n
-*🎫Ayush* @919931122319
+*🎫Joker* @2348022159244
 
-*🎫xeon* @916909137213
+main creator ☝🏼☝🏼
 
-*🎫Pikachu* @918811074852
+*🎫antisocial* @2348107582855
 
-*🎫OldUser* @918602239106
+*🎫clyde* @2347010039405
  \n
-\n📛*Don't Spam them to avoid Blocking !*\n\n For any help, type *${prefix}support* and ask in the group.\n\n*✨️Thanks for using Maria-Md* `;
+\n📛* TRY NONSENSE IN PM AND YOU WILL BE BRUTALLY MOLESTED`;
 
-    Maria.sendMessage(m.chat, { text: devmod, mentions: ["919931122319@s.whatsapp.net", "918811074852@s.whatsapp.net", "916909137213@s.whatsapp.net","918602239106@s.whatsapp.net"] }, { quoted: m });
+    Maria.sendMessage(m.chat, { text: devmod, mentions: ["2348022159244@s.whatsapp.net", "918811074852@s.whatsapp.net", "916909137213@s.whatsapp.net","918602239106@s.whatsapp.net"] }, { quoted: m });
     break;
 
 
@@ -2742,7 +2737,7 @@ case 'dev':
 caption += `\t\t---------------------------------\n`;
 caption += `@${m.sender.split("@")[0]}, ${randomCompliment} \uD83D\uDE0A`;
 caption += `\n\t\t---------------------------------`;
-    Maria.sendMessage(m.chat, { text: caption, mentions: [user, m.sender] }, { quoted: m });
+    joker.sendMessage(m.chat, { text: caption, mentions: [user, m.sender] }, { quoted: m });
     }
 break;
 
@@ -3067,7 +3062,7 @@ let teks = `「🏮 *Google Search Engine*🏮」 \n\n
 `
 for (let g of res) {
 teks += `🧧 *Title* : ${g.title}\n`
-teks += `🔮 *Description* : ${g.snippet}\n`
+teks += `⚛️ *Description* : ${g.snippet}\n`
 teks += `📎 *Link* : ${g.link}\n\n────────────────────\n\n`
 } 
 reply(teks)
@@ -3089,7 +3084,7 @@ case 'define':
 
         const meaning = definition.definition;
 
-        await Maria.sendMessage(from, `📚 *Definition of ${word}*\n\n${meaning}`, { quoted: m });
+        await joker.sendMessage(from, `📚 *Definition of ${word}*\n\n${meaning}`, { quoted: m });
     });
     break;
                    
@@ -3188,8 +3183,8 @@ case 'chat':
         
         
 case "info":
-            Maria.sendMessage(from, { react: { text: "", key: m.key }}) 
-        let ifx = `❁ ════ ❃•💙 *MARIA* 💙•❃ ════ ❁
+            joker.sendMessage(from, { react: { text: "", key: m.key }}) 
+        let ifx = `❁ ════ ❃•⚛️ *IAMXDA* ⚛️•❃ ════ ❁
 
 \`\`\`A FULL FLEDGED MULTI DEVICE WHATSAPP BOT WITH COOL FEATURES\`\`\`
 
@@ -3200,23 +3195,23 @@ case "info":
 \`\`\`This bot is a free open source project by THE TEAM AYUSH\`\`\`
 
 ❁ ═════ ❃•📑 *GITHUB* 📑•❃ ═════ ❁
-*_LINK:- https://github.com/AYUSH-PANDEY023/Maria-MD_*
+*_LINK:- https://github.com/IAMXDA/Maria-MD_*
 
 
 ❁ ═══ ❃•✍🏻 *CONTRIBUTE* ✍🏻•❃ ═══ ❁
 \`\`\`Feel free to open issues regarding any problems or if you have any feature feel free to contact owner by typing ${prefix}owner or ${prefix}mods`
 
-Maria.sendMessage(m.chat, { image: { url: "https://graph.org/file/c8ad7dc322c0b9b7eca8f.jpg" }, caption: ifx, gifPlayback: true }, { quoted: m });
+joker.sendMessage(m.chat, { image: { url: "https://graph.org/file/c8ad7dc322c0b9b7eca8f.jpg" }, caption: ifx, gifPlayback: true }, { quoted: m });
         break;
 
 
     
       case "term":
-            Maria.sendMessage(from, { react: { text: "™️", key: m.key }}) 
+            joker.sendMessage(from, { react: { text: "™️", key: m.key }}) 
         let tifx = `*𝚃𝙴𝚁𝙼𝚜 𝙰𝙽𝙳 𝙲𝙾𝙽𝙳𝙸𝚃𝙸𝙾𝙽*\n\n
 ⍟ *────────────────* ⍟ 
 
-📝 Note: Beware of fake Maria-MD bots! People may falsely claim to represent Maria-MD. Please exercise caution.
+📝 Note: Beware of fake JOKER-MD bots! People may falsely claim to represent JOKER-MD. Please exercise caution.
 
 _Whatsapp Bots have become increasingly popular, but with that comes the risk of encountering fake accounts. Stay vigilant._
 
@@ -3233,12 +3228,12 @@ _We will update the bot's terms and conditions periodically, so it's your respon
 _If you have any questions regarding our terms, please reach out to us._
 _For everything else, use common sense._
 
-*FUTURE IS NOW🚀~MARIA-MD*
-*_🚀Team Ayush_*
+*FUTURE IS NOW⚛️~JOKER-MD*
+*_⚛️IAMXDA⚛️👑_*
 
 ⍟ *────────────────* ⍟`
 
-Maria.sendMessage(m.chat, { image: { url: "https://graph.org/file/c8ad7dc322c0b9b7eca8f.jpg" }, caption: tifx, gifPlayback: true }, { quoted: m });
+joker.sendMessage(m.chat, { image: { url: "https://telegra.ph/file/2f17d744f49c0cab46e65.jpg" }, caption: tifx, gifPlayback: true }, { quoted: m });
         break;
 /////////////////////////////////////////////////////
 
@@ -3286,7 +3281,7 @@ if(isCmd){
                 }
         }
     } catch (err) {
-        Maria.sendText(m.chat, util.format(err), m)
+        joker.sendText(m.chat, util.format(err), m)
         console.log(util.format(err))
     }
 }
